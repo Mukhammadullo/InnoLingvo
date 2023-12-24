@@ -126,37 +126,46 @@ const App = () => {
 
 
       {/* section3 */}
-      <section className='bg-[#E9EBF7] p-[2%]'>
+      <section className='bg-[#E9EBF7] dark:bg-[black] p-[2%]'>
         <div className='m-[5%]'>
-          <h1 className='text-[50px] font-bold'>Модули для детей</h1>
+          <h1 className='text-[50px] font-bold dark:text-[white]'>Модули для детей</h1>
 
           <div className='md:flex'>
 
             <div>
               <img src='src/assets/22.jpg' />
-              <p className='text-[20px] font-bold m-[10px]'>Формируем правильную речь</p>
+              <p className='text-[20px] font-bold m-[10px] dark:text-[white]'>Формируем правильную речь</p>
             </div>
             <div>
               <img src='src/assets/33.jpg' />
-              <p className='text-[20px] font-bold m-[10px]'>Коррекция речи</p>
+              <p className='text-[20px] font-bold m-[10px] dark:text-[white]'>Коррекция речи</p>
             </div>
             <div>
               <img src='src/assets/33.jpg' />
-              <p className='text-[20px] font-bold m-[10px]'>Открытие потенциала Вашего ребенка</p>
+              <p className='text-[20px] font-bold m-[10px] dark:text-[white]'>Открытие потенциала Вашего ребенка</p>
             </div>
           </div>
         </div>
 
-        <div className='hh h-[40vh] border-solid border-red-600  border-[2px] flex flex-col justify-center items-center mb-[-150px]'>
-          <h1 className="text-[40px] text-center text-[white] font-bold">Вступите в white-лист, и вы получите 4 бесплатных
+        <div className='hh h-[40vh]  flex flex-col justify-center items-center mb-[-150px]'>
+          <h1 className="md:text-[40px] text-center text-[white] font-bold">Вступите в white-лист, и вы получите 4 бесплатных
             занятия в числе первых пользователей бесплатно!</h1>
-        
-        <Button type="primary" href="https://ant.design/index-cn" className='bg-[#FF00D6] m-[10px] flex items-center justify-center mob:w-[90%]  md:w-[160px]  h-[50px] text-[18px]'>
-          Вступить</Button>
+
+          <Button type="primary" href="https://ant.design/index-cn" className='bg-[#FF00D6] m-[10px] flex items-center justify-center mob:w-[90%]  md:w-[160px]  h-[50px] text-[18px]'>
+            Записаться</Button>
 
         </div>
-   
+
       </section>
+
+
+
+      {/* section4 */}
+      <section></section>
+
+
+
+
 
     </div>
   )
