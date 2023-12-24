@@ -73,7 +73,7 @@ const App = () => {
 
 
       {/* section1 */}
-      <section className='md:flex justify-between m-[5%]'>
+      <section className='md:flex justify-around m-[5%] '>
 
         {/* left */}
         <div>
@@ -83,7 +83,7 @@ const App = () => {
             <img src='src/assets/Group 56 (1).png' />
             <p className='dark:text-[white] m-[20px] mob:text-[14px] md:text-[20px]'>Скачайте приложение в App Store или <br /> Google Play. Зарегистрируйтесь, чтобы <br /> отслеживать прогресс ребёнка</p>
           </div>
-          
+
           <div className='flex justify-center items-center'>
             <img src='src/assets/Group 57.png' />
             <p className='dark:text-[white] m-[20px] mob:text-[14px] md:text-[20px]'>Скачайте приложение в App Store или <br /> Google Play. Зарегистрируйтесь, чтобы <br /> отслеживать прогресс ребёнка</p>
@@ -103,9 +103,26 @@ const App = () => {
 
 
 
+
+      {/* section2 */}
+      <section className='m-[5%] mt-[20px]'>
+
+        <div className='m-[4%] md:flex justify-around items-center'>
+          {/* left */}
+          <div>
+            <img src='src/assets/Frame (1).png' />
+          </div>
+          {/* right */}
+          <div>
+            <h1 className='font-bold md:text-[50px] dark:text-[white]'>Как это работает?</h1>
+            <p className='m-[10px] dark:text-[white] mob:w-[100%]'>До банального просто! Inno Lingvo - это маркетплейс, <br/> соединяющий логопедов и детей с проблемной <br /> речью со всеми возможными вариантами трудностей <br /> речи: алалия, дислалия, ОНР, дизартрия, ринолалия,<br /> брадилалия, тахилалия, спотыкание, заикание, <br /> дислексия и другие</p>
+            <Button type="default" className='w-[150px] h-[40px] dark:text-[white] border-solid border-[blue] m-[10px]'>Подробнее</Button>
+          </div>
+        </div>
+
+      </section>
+
     </div>
-
-
   )
 }
 export default App
