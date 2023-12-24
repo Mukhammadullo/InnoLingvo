@@ -161,7 +161,14 @@ const App = () => {
 
 
       {/* section4 */}
-      <section></section>
+      <section className=" flex flex-col justify-center items-center h-[100vh]">
+      <div className=" md:flex">
+        <h1 className="text-[30px] font-bold mr-[50px] dark:text-[white]">Немного наглядности</h1>
+        <p className="dark:text-[white]">Посмотрите 3-минутное видео, <br/> чтобы лучше понять как это работает</p>
+        </div>
+        <img  src="src/assets/55.jpg" />
+      </section>
+
 
 
 
