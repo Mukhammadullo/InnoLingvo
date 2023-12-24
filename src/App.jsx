@@ -1,3 +1,5 @@
+import "./App.css"
+
 // button
 import { Button, Flex } from 'antd';
 
@@ -124,7 +126,7 @@ const App = () => {
 
 
       {/* section3 */}
-      <section className='bg-[#E9EBF7] p-[4%]'>
+      <section className='bg-[#E9EBF7] p-[2%]'>
         <div className='m-[5%]'>
           <h1 className='text-[50px] font-bold'>Модули для детей</h1>
 
@@ -145,13 +147,15 @@ const App = () => {
           </div>
         </div>
 
-        <div>
-          <h1>Вступите в white-лист, и вы получите 4 бесплатных
+        <div className='hh h-[40vh] border-solid border-red-600  border-[2px] flex flex-col justify-center items-center mb-[-150px]'>
+          <h1 className="text-[40px] text-center text-[white] font-bold">Вступите в white-лист, и вы получите 4 бесплатных
             занятия в числе первых пользователей бесплатно!</h1>
-        </div>
+        
         <Button type="primary" href="https://ant.design/index-cn" className='bg-[#FF00D6] m-[10px] flex items-center justify-center mob:w-[90%]  md:w-[160px]  h-[50px] text-[18px]'>
-          Вступить
-        </Button>
+          Вступить</Button>
+
+        </div>
+   
       </section>
 
     </div>
