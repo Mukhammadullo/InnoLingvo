@@ -197,7 +197,21 @@ const App = () => {
       </section>
 
 
-
+      {/* footer */}
+      <footer>
+        <div className="card_footer">
+          <h1>Хотите быть первыми? Запишитесь!</h1>
+        
+        <div className="flex">
+          <Button type="primary" href="https://ant.design/index-cn" className='bg-[#FF00D6] m-[10px] flex items-center justify-center mob:w-[90%]  md:w-[160px]  h-[50px] text-[18px]'>
+            Вступить
+          </Button>
+          <p>Мы открыли возможность для новых клиентов попробовать сервис в
+            течение месяца бесплатно. Вам стоит просто оставить свой email в
+            указанной форме. Мы обещаем — никакой рекламы и спама, только письмо по существу открытия сервиса</p>
+        </div>
+        </div>
+      </footer>
 
 
     </div>
