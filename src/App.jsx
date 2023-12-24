@@ -37,8 +37,8 @@ const App = () => {
             </ul>
 
             <div className='flex items-center'>
-              <Button className='text-[white] w-[130px] h-[40px] mr-[10px] mob:hidden md:inline-flex'>Логин</Button>
-              <Button type="primary" className='bg-[blue] w-[130px] h-[40px] mr-[10px] mob:hidden md:inline-flex '>Регистрация</Button>
+              <Button className='text-[white] w-[150px] flex justify-center items-center h-[40px] mr-[10px] mob:hidden md:inline-flex'>Логин</Button>
+              <Button type="primary" className='bg-[blue] w-[130px] flex justify-center items-center h-[40px] mr-[10px] mob:hidden md:inline-flex '>Регистрация</Button>
 
               <MenuOutlined className='mob:block md:hidden text-[30px] text-[white] mr-[20px]' />
 
