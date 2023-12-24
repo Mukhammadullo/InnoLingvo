@@ -29,7 +29,7 @@ const App = () => {
               </div>
             </div>
 
-            <ul className='flex text-[white] '>
+            <ul className=' text-[white] mob:hidden md:inline-flex '>
               <li className='m-[15px]'>О нас</li>
               <li className='m-[15px]'> Преимущества </li>
               <li className='m-[15px]'> Работа сервиса</li>
@@ -37,10 +37,10 @@ const App = () => {
             </ul>
 
             <div className='flex items-center'>
-              <Button className='text-[white] w-[130px] h-[40px] mr-[10px]'>Логин</Button>
-              <Button type="primary" className='bg-[blue] w-[130px] h-[40px] mr-[10px]'>Регистрация</Button>
+              <Button className='text-[white] w-[130px] h-[40px] mr-[10px] mob:hidden md:inline-flex'>Логин</Button>
+              <Button type="primary" className='bg-[blue] w-[130px] h-[40px] mr-[10px] mob:hidden md:inline-flex '>Регистрация</Button>
 
-              <MenuOutlined />
+              <MenuOutlined className='mob:block md:hidden' />
 
               <Switcher />
 
@@ -50,15 +50,15 @@ const App = () => {
           {/* bottom */}
           <div className='md:flex items-center justify-around mt-[70px]'>
             <div>
-              <h1 className='font-bold text-[56px] text-[white]'>Первый в мире сервис <br />
+              <h1 className='font-bold md:text-[56px] text-[white]'>Первый в мире сервис <br />
                 для постановки и улучшения <br />
                 русской речи для детей</h1>
 
               <p className='text-[white] m-[10px]'>Вступите в white-лист и получите 4 бесплатных <br />
                 занятия в числе первых пользователей бесплатно</p>
 
-              <div className='flex'>
-                <Button type="primary" href="https://ant.design/index-cn" className='bg-[#FF00D6] m-[10px] flex items-center justify-center w-[160px]  h-[50px] text-[18px]'>
+              <div className='md:flex'>
+                <Button type="primary" href="https://ant.design/index-cn" className='bg-[#FF00D6] m-[10px] flex items-center justify-center mob:w-[90%]  md:w-[160px]  h-[50px] text-[18px]'>
                   Вступить
                 </Button>
                 <p className='text-[white]'>Количество мест <br /> ограничено!</p>
