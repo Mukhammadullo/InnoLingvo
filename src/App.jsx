@@ -173,7 +173,7 @@ const App = () => {
 
 
       {/* section5 */}
-      <section className="bg-[#E9EBF7] p-[4%]">
+      <section className="bg-[#E9EBF7] dark:bg-black p-[4%]">
 
         <div className="m-[4%]">
           <div className="flex justify-center m-[2%]">
@@ -216,19 +216,19 @@ const App = () => {
         </div>
 
 
-        <div className="md:flex md:justify-around mob:flex flex-col items-center mt-[20px]">
+        <div className=" mob:flex flex-col mob:items-center  mt-[20px]">
           <div>
-            <InstagramOutlined  className="text-[20px] m-[10px]"/>
-            <FacebookOutlined   className="text-[20px] m-[10px]"/>
-            <YoutubeOutlined    className="text-[20px] m-[10px]"/>
+            <InstagramOutlined  className="text-[20px] m-[10px] dark:text-[white]"/>
+            <FacebookOutlined   className="text-[20px] m-[10px] dark:text-[white]"/>
+            <YoutubeOutlined    className="text-[20px] m-[10px] dark:text-[white]"/>
           </div>
           <div>
-            <p className="font-bold">© Inno Lingvo, 2019-2022</p>
+            <p className="font-bold dark:text-[white]">© Inno Lingvo, 2019-2022</p>
             <p className="text-[blue]">Политика конфиденциальности</p>
           </div>
           <div>
-            <p >Москва, Болотниковская ул. 31</p>
-            <p className="md:text-end">il@innolingvo.ru</p>
+            <p className="dark:text-[white]">Москва, Болотниковская ул. 31</p>
+            <p className="md:text-end dark:text-[white]">il@innolingvo.ru</p>
           </div>
         </div>
 
