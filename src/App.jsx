@@ -115,11 +115,43 @@ const App = () => {
           {/* right */}
           <div>
             <h1 className='font-bold md:text-[50px] dark:text-[white]'>Как это работает?</h1>
-            <p className='m-[10px] dark:text-[white] mob:w-[100%]'>До банального просто! Inno Lingvo - это маркетплейс, <br/> соединяющий логопедов и детей с проблемной <br /> речью со всеми возможными вариантами трудностей <br /> речи: алалия, дислалия, ОНР, дизартрия, ринолалия,<br /> брадилалия, тахилалия, спотыкание, заикание, <br /> дислексия и другие</p>
+            <p className='m-[10px] dark:text-[white] mob:w-[100%]'>До банального просто! Inno Lingvo - это маркетплейс, <br /> соединяющий логопедов и детей с проблемной <br /> речью со всеми возможными вариантами трудностей <br /> речи: алалия, дислалия, ОНР, дизартрия, ринолалия,<br /> брадилалия, тахилалия, спотыкание, заикание, <br /> дислексия и другие</p>
             <Button type="default" className='w-[150px] h-[40px] dark:text-[white] border-solid border-[blue] m-[10px]'>Подробнее</Button>
           </div>
         </div>
 
+      </section>
+
+
+      {/* section3 */}
+      <section className='bg-[#E9EBF7] p-[4%]'>
+        <div className='m-[5%]'>
+          <h1 className='text-[50px] font-bold'>Модули для детей</h1>
+
+          <div className='md:flex'>
+
+            <div>
+              <img src='src/assets/22.jpg' />
+              <p className='text-[20px] font-bold m-[10px]'>Формируем правильную речь</p>
+            </div>
+            <div>
+              <img src='src/assets/33.jpg' />
+              <p className='text-[20px] font-bold m-[10px]'>Коррекция речи</p>
+            </div>
+            <div>
+              <img src='src/assets/33.jpg' />
+              <p className='text-[20px] font-bold m-[10px]'>Открытие потенциала Вашего ребенка</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h1>Вступите в white-лист, и вы получите 4 бесплатных
+            занятия в числе первых пользователей бесплатно!</h1>
+        </div>
+        <Button type="primary" href="https://ant.design/index-cn" className='bg-[#FF00D6] m-[10px] flex items-center justify-center mob:w-[90%]  md:w-[160px]  h-[50px] text-[18px]'>
+          Вступить
+        </Button>
       </section>
 
     </div>
