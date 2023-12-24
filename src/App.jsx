@@ -1,8 +1,13 @@
 // button
 import { Button, Flex } from 'antd';
 
+// icons
+import {MenuOutlined} from '@ant-design/icons';
+
+import { Space } from 'antd';
 
 import Switcher from './components/Switcher'
+import { sizing } from '@mui/system';
 const App = () => {
 
   return (
@@ -34,7 +39,11 @@ const App = () => {
             <div className='flex items-center'>
               <Button className='text-[white] w-[130px] h-[40px] mr-[10px]'>Логин</Button>
               <Button type="primary" className='bg-[blue] w-[130px] h-[40px] mr-[10px]'>Регистрация</Button>
+
+              <MenuOutlined />
+
               <Switcher />
+
             </div>
           </div>
 
