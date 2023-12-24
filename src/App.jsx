@@ -16,12 +16,12 @@ const App = () => {
     <div className='dark:bg-black h-auto  border-red-500 border-solid border-[1px]'>
 
       <div className='bg-[#BF2ED1] dark:bg-[black]'>
-        <header className='  ml-[4%] mr-[4%] border-red-600 border-solid border-[2px] '>
+        <header className='ml-[4%] mr-[4%]  dark:border-black border-[#BF2ED1] border-solid border-[1px]  '>
 
           {/* top */}
           {/* logo */}
-          <div className='md:flex items-center mt-[20px] justify-between'>
-            <div className='md:flex'>
+          <div className='flex items-center mt-[20px] justify-between'>
+            <div className='flex'>
               <div className='w-[50px] h-[50px] bg-[#B467E9] rounded-[25px]'></div>
               <div>
                 <p className='font-bold text-[white]'>Inno Lingvo</p>
@@ -40,7 +40,7 @@ const App = () => {
               <Button className='text-[white] w-[130px] h-[40px] mr-[10px] mob:hidden md:inline-flex'>Логин</Button>
               <Button type="primary" className='bg-[blue] w-[130px] h-[40px] mr-[10px] mob:hidden md:inline-flex '>Регистрация</Button>
 
-              <MenuOutlined className='mob:block md:hidden' />
+              <MenuOutlined className='mob:block md:hidden text-[30px] text-[white] mr-[20px]' />
 
               <Switcher />
 
@@ -50,11 +50,11 @@ const App = () => {
           {/* bottom */}
           <div className='md:flex items-center justify-around mt-[70px]'>
             <div>
-              <h1 className='font-bold md:text-[56px] text-[white]'>Первый в мире сервис <br />
+              <h1 className='font-bold mob:text-[25px] md:text-[56px] text-[white]'>Первый в мире сервис <br />
                 для постановки и улучшения <br />
                 русской речи для детей</h1>
 
-              <p className='text-[white] m-[10px]'>Вступите в white-лист и получите 4 бесплатных <br />
+              <p className='text-[white] mt-[10px]'>Вступите в white-лист и получите 4 бесплатных <br />
                 занятия в числе первых пользователей бесплатно</p>
 
               <div className='md:flex'>
