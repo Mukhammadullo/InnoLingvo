@@ -2,7 +2,7 @@
 import { Button, Flex } from 'antd';
 
 // icons
-import {MenuOutlined} from '@ant-design/icons';
+import { MenuOutlined } from '@ant-design/icons';
 
 import { Space } from 'antd';
 
@@ -70,6 +70,36 @@ const App = () => {
         </header>
       </div>
 
+
+
+      {/* section1 */}
+      <section className='md:flex justify-between m-[5%]'>
+
+        {/* left */}
+        <div>
+          <h1 className='font-bold mob:text-[30px] md:text-[40px]  text-[black] dark:text-[white]'>Всего 3 минуты, чтобы <br /> начать улучшать речь</h1>
+
+          <div className='flex justify-center items-center'>
+            <img src='src/assets/Group 56 (1).png' />
+            <p className='dark:text-[white] m-[20px] mob:text-[14px] md:text-[20px]'>Скачайте приложение в App Store или <br /> Google Play. Зарегистрируйтесь, чтобы <br /> отслеживать прогресс ребёнка</p>
+          </div>
+          
+          <div className='flex justify-center items-center'>
+            <img src='src/assets/Group 57.png' />
+            <p className='dark:text-[white] m-[20px] mob:text-[14px] md:text-[20px]'>Скачайте приложение в App Store или <br /> Google Play. Зарегистрируйтесь, чтобы <br /> отслеживать прогресс ребёнка</p>
+          </div>
+          <div className='flex justify-center items-center'>
+            <img src='src/assets/Group 58.png' />
+            <p className='dark:text-[white] m-[20px] mob:text-[14px] md:text-[20px]'>Скачайте приложение в App Store или <br /> Google Play. Зарегистрируйтесь, чтобы <br /> отслеживать прогресс ребёнка</p>
+          </div>
+
+        </div>
+        {/* right */}
+        <div>
+          <img src='src/assets/Group 16.png' />
+        </div>
+
+      </section>
 
 
 
