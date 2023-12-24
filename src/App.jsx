@@ -10,6 +10,7 @@ import { Space } from 'antd';
 
 import Switcher from './components/Switcher'
 import { sizing } from '@mui/system';
+import Card1 from "./components/Card1";
 const App = () => {
 
   return (
@@ -162,19 +163,41 @@ const App = () => {
 
       {/* section4 */}
       <section className=" flex flex-col justify-center items-center h-[100vh]">
-      <div className=" md:flex">
-        <h1 className="text-[30px] font-bold mr-[50px] dark:text-[white]">Немного наглядности</h1>
-        <p className="dark:text-[white]">Посмотрите 3-минутное видео, <br/> чтобы лучше понять как это работает</p>
+        <div className=" md:flex">
+          <h1 className="text-[30px] font-bold mr-[50px] dark:text-[white]">Немного наглядности</h1>
+          <p className="dark:text-[white]">Посмотрите 3-минутное видео, <br /> чтобы лучше понять как это работает</p>
         </div>
-        <img  src="src/assets/55.jpg" />
+        <img src="src/assets/55.jpg" />
       </section>
 
 
 
+      {/* section5 */}
+      <section>
 
+        <div className="m-[4%]">
+          <h1 className="text-[30px] font-bold">Исследование показало, что каждый 4 ребёнок в возрасте от 3 до 12 лет имеет
+            проблемы в речи, влияющие на его будущее</h1>
 
+          {/* components */}
+          <div className="">
+
+            <div className="md:flex justify-around">
+              <Card1 img={'src/assets/Group 60.png'} title={'Стоимость'} txt={'Логопедия стоит дорого, и цена вполне оправдана. В нашем случае -помощник Inno Lingvo предлагает Вам оплачивать сервис по занятиям слогопедом в 2 раза ниже минимальной цены консультации'} innertxt={'Подробнее о преимуществах'}></Card1>
+              <Card1 img={'src/assets/Group 60.png'} title={'Системность в развитии'} txt={'Логопедия стоит дорого, и цена вполне оправдана. В нашем случае -помощник Inno Lingvo предлагает Вам оплачивать сервис по занятиям слогопедом в 2 раза ниже минимальной цены консультации'} innertxt={'Подробнее о преимуществах'}></Card1>
+            </div>
+
+            <div className="md:flex justify-around mt-[40px]">
+              <Card1 img={'src/assets/Group 60.png'} title={'Удобное время'} txt={'Логопедия стоит дорого, и цена вполне оправдана. В нашем случае -помощник Inno Lingvo предлагает Вам оплачивать сервис по занятиям слогопедом в 2 раза ниже минимальной цены консультации'} innertxt={'Подробнее о преимуществах'}></Card1>
+              <Card1 img={'src/assets/Group 60.png'} title={'Дети учат детей'} txt={'Логопедия стоит дорого, и цена вполне оправдана. В нашем случае -помощник Inno Lingvo предлагает Вам оплачивать сервис по занятиям слогопедом в 2 раза ниже минимальной цены консультации'} innertxt={'Подробнее о преимуществах'}></Card1>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </div>
+
+
   )
 }
 export default App
