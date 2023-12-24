@@ -4,7 +4,7 @@ import "./App.css"
 import { Button, Flex } from 'antd';
 
 // icons
-import { MenuOutlined, InstagramOutlined, FacebookOutlined, YoutubeOutlined} from '@ant-design/icons';
+import { MenuOutlined, InstagramOutlined, FacebookOutlined, YoutubeOutlined } from '@ant-design/icons';
 
 import { Space } from 'antd';
 
@@ -16,7 +16,7 @@ const App = () => {
   return (
 
     // main
-    <div className='dark:bg-black h-auto  border-red-500 border-solid border-[1px]'>
+    <div className='dark:bg-black h-auto  '>
 
       <div className='bg-[#BF2ED1] dark:bg-[black]'>
         <header className='ml-[4%] mr-[4%]  dark:border-black border-[#BF2ED1] border-solid border-[1px]  '>
@@ -173,7 +173,7 @@ const App = () => {
 
 
       {/* section5 */}
-      <section>
+      <section className="bg-[#E9EBF7] p-[4%]">
 
         <div className="m-[4%]">
           <div className="flex justify-center m-[2%]">
@@ -200,23 +200,36 @@ const App = () => {
       {/* footer */}
       <footer>
 
-        <div className="card_footer">
-          <h1>Хотите быть первыми? Запишитесь!</h1>
+        <div className="flex justify-center mt-[-60px]">
+          <div className="card_footer mob:w-[90%] md:w-[60%] h-[30vh] rounded-[12px] flex flex-col justify-center items-center">
+            <h1 className="md:text-[30px] font-bold text-[white] m-[10px]">Хотите быть первыми? Запишитесь!</h1>
 
-          <div className="flex">
-            <Button type="primary" href="https://ant.design/index-cn" className='bg-[#FF00D6] m-[10px] flex items-center justify-center mob:w-[90%]  md:w-[160px]  h-[50px] text-[18px]'>
-              Вступить
-            </Button>
-            <p>Мы открыли возможность для новых клиентов попробовать сервис в
-              течение месяца бесплатно. Вам стоит просто оставить свой email в
-              указанной форме. Мы обещаем — никакой рекламы и спама, только письмо по существу открытия сервиса</p>
+            <div className="flex p-[2%]">
+              <Button type="primary" href="https://ant.design/index-cn" className='bg-[#FF00D6] m-[10px] flex items-center justify-center mob:w-[90%]  md:w-[360px]  h-[50px] text-[18px]'>
+                Вступить
+              </Button>
+              <p className="text-[white] mob:text-[12px]">Мы открыли возможность для новых клиентов попробовать сервис в
+                течение месяца бесплатно. Вам стоит просто оставить свой email в
+                указанной форме. Мы обещаем — никакой рекламы и спама, только письмо по существу открытия сервиса</p>
+            </div>
           </div>
         </div>
 
-        <div>
-          <InstagramOutlined />
-          <FacebookOutlined />
-          <YoutubeOutlined />
+
+        <div className="md:flex md:justify-around mob:flex flex-col items-center mt-[20px]">
+          <div>
+            <InstagramOutlined  className="text-[20px] m-[10px]"/>
+            <FacebookOutlined   className="text-[20px] m-[10px]"/>
+            <YoutubeOutlined    className="text-[20px] m-[10px]"/>
+          </div>
+          <div>
+            <p className="font-bold">© Inno Lingvo, 2019-2022</p>
+            <p className="text-[blue]">Политика конфиденциальности</p>
+          </div>
+          <div>
+            <p >Москва, Болотниковская ул. 31</p>
+            <p className="md:text-end">il@innolingvo.ru</p>
+          </div>
         </div>
 
 
