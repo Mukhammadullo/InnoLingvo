@@ -9,6 +9,14 @@ import Switcher from './components/Switcher'
 import { sizing } from '@mui/system';
 import Card1 from "./components/Card1";
 
+
+// mobile ant
+// import { Dropdown, Radio, Space } from 'antd-mobile'
+// import { DemoBlock } from 'demos'
+// import { ArrowDownCircleOutline, DownOutline } from 'antd-mobile-icons'
+
+
+
 const App = () => {
 
 
@@ -106,11 +114,11 @@ const App = () => {
 
 
 
-  
+
   return (
 
 
-    
+
     // main
     <div className='dark:bg-black h-auto  '>
 
@@ -142,6 +150,31 @@ const App = () => {
               <MenuOutlined className='mob:block md:hidden text-[30px] text-[white] mr-[20px]' />
 
               <Switcher />
+
+              {/* menuANT MObile */}
+              {/* <div>
+<DemoBlock title='一列' padding={'0'}>
+                  <Dropdown>
+                    <Dropdown.Item key='sorter' title='排序'>
+                      <div style={{ padding: 12 }}>
+                        <Radio.Group defaultValue='default'>
+                          <Space direction='vertical' block>
+                            <Radio block value='default'>
+                              综合排序
+                            </Radio>
+                            <Radio block value='nearest'>
+                              距离最近
+                            </Radio>
+                            <Radio block value='top-rated'>
+                              评分最高
+                            </Radio>
+                          </Space>
+                        </Radio.Group>
+                      </div>
+                    </Dropdown.Item>
+                  </Dropdown>
+                </DemoBlock>
+              </div> */}
 
             </div>
           </div>
@@ -224,7 +257,7 @@ const App = () => {
 
       {/* TODO_LIST_____________________________________________ */}
 
-      <div className='w-[100%] h-[20vh] flex items-center justify-center  shadow-2xl'>
+      <div className='md:w-[100%] md:h-[20vh] md:flex items-center justify-center  shadow-2xl'>
         {/* inputName */}
         <input placeholder='search ....' onChange={(event) => setSearch(event.target.value)} className='w-[350px] h-[60px] rounded-[12px] p-[8px] m-[12px] border-black border-solid  border-[1px]' />
 
@@ -246,17 +279,17 @@ const App = () => {
 
 
 
-      <div className='w-[98%] m-auto mt-[40px] p-[20px] bg-black text-[white] h-auto '>
+      <div className='md:w-[98%] m-auto mt-[40px] p-[20px] bg-[white] dark:bg-[black] text-[black] dark:text-[white] h-auto '>
         {data.filter((element) => {
           return search.toLocaleLowerCase() === '' ? element : element.name.toLocaleLowerCase().includes(search)
         })
           .filter((element) => element.phone.toLocaleLowerCase().trim().includes(select.toLocaleLowerCase().trim()))
           .map((element) => {
             return (
-              <div key={element.id} className="w-[95%] h-[250px] m-[20px] p-[2%] rounded-[12px] border-red-500 border-solid border-[2px]" >
+              <div key={element.id} className="md:w-[95%] md:h-[250px] m-[20px] p-[2%] rounded-[12px] border-pink-600 border-solid border-[2px]" >
                 <h1 className='text-[26px] font-semibold'>{element.id}</h1>
                 <h1 style={{ color: element.completed ? "red" : "yellow" }} className="text-[36px]">{element.name}</h1>
-                <h1 className='text-[white] text-[26px]'>{element.phone}</h1>
+                <h1 className='text-[black] text-[26px]'>{element.phone}</h1>
                 <button onClick={() => delUser(element.id)} className='w-[150px] h-[55px] rounded-[12px] bg-red-500 m-[20px] text-[22px] font-semibold text-[white]  shadow-2xl'>Delete</button>
                 <button onClick={() => modalOpen(element)} className='w-[150px] h-[55px] rounded-[12px] bg-red-500 m-[20px] text-[22px] font-semibold text-[white]  shadow-2xl'>Edit</button>
                 <input type={'checkbox'} checked={element.completed} onChange={() => comp(element.id)} />
